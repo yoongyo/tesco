@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+
+<img width="100%" src="{% static 'img/12.jpg' %}">
+<div class="container">
+    <div class="text-center py-4">
+        <h1><span class="pb-3" style="border-bottom: 5px solid #337ab7;">회사소개</span></h1>
+    </div>
+    <div class="my-5">
+        <div class="row pb-3">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <img width="100%" src="{% static 'img/main.jpeg' %}" style="border-radius: 13px;">
+            </div>
+            <div class="col-5">
+                <h3 class="text-center py-3">대표자 인사말</h3>
+                <p>
+                    저희 ㈜테스코 는 반도체, LED, LCD, SOLAR, OLED 장비부품 및 Lab 장비
+                    QUARTZ 소재부품 국산화 전문업체로 제품, 설계, 제작, 납품, A/S를
+                    전문으로 하는 유망 중소기업 입니다.
+                    <br><br>
+                    오랜 경험을 통한 축적된 기술력과 Know-How를 바탕으로 국내외 반도체,
+                    LED, LCD, SOLAR, OLED 장비부품 및 Lab 장비 부품산업에 양질의 제품을 공급 하고 있으며,
+                    끊임없는 신제품,신기술 개발과  공정개발을 통하여 고객대응에 더욱 적극대응 하기 위하여 항상 노력하고 있습니다.
+                </p>
+
+                <strong><p class="d-flex flex-row-reverse" style="font-size:20px">- 대표이사 백승혁 - </p></strong>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-1"></div>
+            <div class="col-5">
+                <h2 class="mb-4">회사개요</h2>
+                <table class="table">
+                    <tr>
+                        <td style="font-weight: bold; font-size: 19px;">기업명</td>
+                        <td>(주)테스코</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; font-size: 19px;">대표이사</td>
+                        <td>백승혁</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; font-size: 19px;">설립일</td>
+                        <td>2011년 11월 5일</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; font-size: 19px;">업종</td>
+                        <td>반도체 테스트</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold; font-size: 19px;">사업장</td>
+                        <td>경기도 화성시 양감면 송말길 8-31</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-5 p-0 mx-3">
+                <h2 class="mb-4">연혁</h2>
+                <div class="row mb-3" >
+                    <div class="col-3"><span style="font-size: 25px; color: #777777">2011</span></div>
+                    <div class="col-9"><span style="font-size: 20px;">(주)테스코 설립(11.05)</span></div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col-3"><span style="font-size: 25px; color: #777777">2016</span></div>
+                    <div class="col-9"><span style="font-size: 20px;">ISO 9001, 14001 획득(16.08)</span></div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col-3"><span style="font-size: 25px; color: #777777">2017</span></div>
+                    <div class="col-9"><span style="font-size: 20px;">화성 양감 공장 신축 이전(17.06) <br>대형화 가공구축 가로:3000 세로 1500</span></div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col-3"><span style="font-size: 25px; color: #777777">2019</span></div>
+                    <div class="col-9"><span style="font-size: 20px;">과학기술정보통신부 표창장(19.04)</span></div>
+                </div>
+                <hr>
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

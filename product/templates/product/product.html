@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<img width="100%" src="{% static 'img/md.jpg' %}">
+    <div class="container">
+        <div class="text-center py-4">
+            <h1><span class="pb-3" style="border-bottom: 5px solid #337ab7;">제품소개</span></h1>
+        </div>
+        <div class="container my-5 text-center" style="width: 100%">
+            <div class="row" style="float:none; margin:0 auto; width: 80%;">
+                {% for i in products %}
+                    <a class="px-1" href="{% url 'product:product' i.pk %}" style="border:1px solid gray;width:20%;text-align: center; text-decoration: none; color:gray">
+                        <div class="text-center">
+                            <p class="my-1">{{ i.name }}</p>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="container px-5">
+            <h3 class="m-0" style="border-left:8px solid rgb(0,52,136);">&nbsp&nbsp&nbsp{{ product.name }}</h3>
+            <hr>
+            <div class="text-center my-5">
+                <img src="{{ product.image.url }}">
+            </div>
+        </div>
+    </div>
+{% endblock %}
