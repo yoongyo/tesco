@@ -48,38 +48,73 @@
         </div>
     </div>
 
+    <img src="{% static 'img/main2.png' %}" width="100%">
+
     <!-- content -->
-
-    <!-- home.jpg -->
-
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <div class="text-center">
-        <img class="text-center" src="{% static 'img/main.jpeg' %}">
+    <div class="container py-5">
+        <h3 class="text-center">SERVICE</h3>
+        <p class="text-center">㈜테스코는 susceptor,pyrex,glass 장비부품 및 Lab 장비 QUARTZ 소재 부품전문업체 로<br>
+            제품, 설계, 제작, 납품, A/S 를 전문으로 하는 유망 기업 입니다.</p>
+        <div class="row">
+            <div class="col-4 text-center">
+                <img class="my-5" src="{% static 'img/settings_1.png' %}" width="80px">
+                <h4>보유장비</h4>
+                <div style="background-color: rgb(0, 30, 110);border-radius: 13px;width: 120px;float:none; margin:0 auto;">
+                    <a style="text-decoration: none; color:white" href="{% url 'develop:develop' %}">
+                        <h5>보러가기</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <img class="my-5" src="{% static 'img/product_1.png' %}" width="80px">
+                <h4>생산제품</h4>
+                <div style="background-color: rgb(0, 30, 110);border-radius: 13px;width: 120px;float:none; margin:0 auto;">
+                    <a style="text-decoration: none; color:white" href="{% url 'product:product' 2 %}">
+                        <h5>보러가기</h5>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <img class="my-5" src="{% static 'img/call_1.png' %}" width="80px">
+                <h4>문의하기</h4>
+                <div style="background-color: rgb(0, 30, 110);border-radius: 13px;width: 120px;float:none; margin:0 auto;">
+                    <a style="text-decoration: none; color:white;" href="{% url 'contact:contact' %}">
+                        <h5>보러가기</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
 
-
-    <!--<div class="text-center my-4">-->
-        <!--<h2>주요 거래처</h2>-->
+    <!--<h2 class="text-center">주요 거래처</h2>-->
+    <!--<div class="my-4" style="background-color:white !important; height: 130px;">-->
         <!--<div class="container">-->
-            <!--<div class="row" style="background-color:white">-->
+            <!--<div class="row" style="float:none; margin:0 auto; width: 90%;">-->
                 <!--{% for i in customers %}-->
-                    <!--<div class="col-3">-->
-                        <!--<img src="{{ i.logo.url }}" width="100%">-->
-                    <!--</div>-->
+                <!--<div class="">-->
+                    <!--<img src="{{ i.logo.url }}" width="120px" height="100px">-->
+                <!--</div>-->
                 <!--{% endfor %}-->
             <!--</div>-->
         <!--</div>-->
     <!--</div>-->
 
 
+    <div class="py-5 text-center my-4" style="background-image: url({% static 'img/product.jpg' %}); width: 100%; height:260px">
+        <p class="text-center py-4" style="color:white; font-size: 18px;">
+            (주)테스코는 경쟁력 있는 가격으로, 완벽한 품질로, 감동스러운 서비스로<br>
+            그리고 최단 시간내에 반도체 테스트 용역을 고객께 제공하는 것을 사명으로 하고 있습니다.
+        </p>
+        <a href="#" class="btn btn-primary" style="border:1px solid white">Test 상담 및 견적 문의</a>
+    </div>
+
+
 
     <!-- footer -->
-    <div style="background-color:rgb(20,20,20); height: 150px;">
+    <div class="py-4" style="background-color:rgb(20,20,20); height: 160px;">
         <div class="container" style="color:rgb(152,152,152)">
-            <div class="row py-4 mx-4">
+            <div class="row mx-4">
                 <div class="col-3">
                     <h1>TESCO</h1>
                 </div>
@@ -87,6 +122,7 @@
                     <p class="m-0">경기도 화성시 양감면 송말길 8-31</p>
                     <p class="m-0">Tel: 031-373-0252</p>
                     <p class="m-0">Mobile: 010-5525-4379</p>
+                    <p class="m-0">FAX: 031-373-0253</p>
                     <p class="m-0">E-mail: bsh4379@hanmail.net</p>
                 </div>
             </div>
