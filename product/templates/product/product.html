@@ -8,9 +8,9 @@
             <h1><span class="pb-3" style="border-bottom: 5px solid #337ab7;">제품소개</span></h1>
         </div>
         <div class="container my-5 text-center" style="width: 100%">
-            <div class="row" style="float:none; margin:0 auto; width: 80%;">
+            <div class="row" style="float:none; margin:0 auto; width: 60%;">
                 {% for i in products %}
-                    <a class="px-1" href="{% url 'product:product' i.pk %}" style="border:1px solid gray;width:20%;text-align: center; text-decoration: none; color:gray">
+                    <a class="px-1" href="{% url 'product:product' i.pk %}" style="border:1px solid gray;width:33.33%;text-align: center; text-decoration: none; color:gray">
                         <div class="text-center">
                             <p class="my-1">{{ i.name }}</p>
                         </div>
