@@ -16,4 +16,4 @@ def robots(request):
 
 
 def owner(request):
-    return render(request, 'naver-site-verification: naverfd014607792a788dc788160885065616.html')
+    return render(request, 'naverfd014607792a788dc788160885065616.html')
