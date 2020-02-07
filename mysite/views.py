@@ -9,3 +9,6 @@ def home(request):
     return render(request, 'home.html', {
         'customers': customers
     })
+
+def robots(request):
+    return render(request, 'robots.txt')
